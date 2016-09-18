@@ -1,7 +1,4 @@
-
-
-describe('index', function() {
-  it('runs', function() {
-    expect(true).toEqual(true)
-  })
-})
+require('./App-test')
+require('./Store-test')
+require('./actions-test')
+require('./counterStore-test')
