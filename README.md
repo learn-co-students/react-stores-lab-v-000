@@ -18,7 +18,7 @@ There are two stores: `Store` and `CounterStore`. `CounterStore` inherits from
 The global application state that we're updating is a simple counter,
 represented by a number.
 
-Our `<App />` component renders tow buttons and the actual counter number. If
+Our `<App />` component renders two buttons and the actual counter number. If
 we click on `+`, the counter will be incremented by `1`. If we click `-`, the
 counter will be decremented by `1`.
 
