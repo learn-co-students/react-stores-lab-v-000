@@ -9,12 +9,12 @@
 
 ## Overview
 
-In this lesson we're going implement a simple `<Counter />` component. We're
-going to focus on the stores and actions while building this application.
+In this lesson we're going implement a simple counter application.
+Our focus will be on the stores and actions, how they interact with each other
+and how we can wire them up to components.
 
 Our counter has two buttons used for incrementing and decrementing a number.
-
-This is what we're going to build:
+This is how it's going to look like:
 
 ![Screenshot](assets/screenshot.png)
 
@@ -36,7 +36,13 @@ to focus on the global store of our application.
 ## Components
 
 Our application has a single component called `<App />`. `<App />` needs to be
-"wired" up to the `counterStore` using the component's lifecycle methods.
+"wired" up to the `counterStore` using the component's lifecycle methods:
+
+* `componentDidMount` is going to add an event listener to the `counterStore`.
+    If the store is being updated, the state of our `<App />` component should
+    be updated as well.
+
+* `componentWillUnmount` is going to remove the event listener.
 
 Our `<App />` component renders two buttons and the actual counter number. If
 we click on `+`, the counter will be incremented by `1`. If we click `-`, the
