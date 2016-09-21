@@ -31,12 +31,14 @@ class App extends React.Component {
     return (
       <div className='app'>
         <h1 className='counter'>{this.state.counter}</h1>
-        <button className='increment' onClick={this.handleIncrementClick}>
-          +
-        </button>
-        <button className='decrement' onClick={this.handleDecrementClick}>
-          -
-        </button>
+        <div className='actions'>
+          <button className='decrement' onClick={this.handleDecrementClick}>
+            -
+          </button>
+          <button className='increment' onClick={this.handleIncrementClick}>
+            +
+          </button>
+        </div>
       </div>
     );
   }
