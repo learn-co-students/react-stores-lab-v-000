@@ -14,7 +14,8 @@ Our focus will be on the stores and actions, how they interact with each other
 and how we can wire them up to components.
 
 Our counter has two buttons used for incrementing and decrementing a number.
-This is how it's going to look like:
+
+This is what it's going to look like:
 
 ![Screenshot](assets/screenshot.png)
 
@@ -66,10 +67,12 @@ be the initial state of the `counterStore`.
 There are two actions: `increment()` and `decrement()`. The action creators are
 directly wired up to the global `counterStore` singleton.
 
-`increment()` and `decrement()` respectively update the `counterStore` by
+`increment()` and `decrement()` have similar logic. They both update the
+`counterStore` by doing the following:
 
-1. retrieving the previous state using `store.getState()`.
-2. adding / subtracting `1` from the previous state and calling
+1. Both of them first have to retrieve the previous state using
+    `store.getState()`.
+2. They then add / subtract `1` from the previous state and call
     `store.setState(newState)`
 
 ### Stores -> Components
@@ -77,7 +80,7 @@ directly wired up to the global `counterStore` singleton.
 Our `<App />` component doesn't directly update the store, but subscribes to
 its updates. The store is the single source of truth of our application, but is
 completely decoupled from individual components. In other words, there is no way
-how a component can directly update a store.
+for a component to directly update a store.
 
 ### Components -> Actions -> Stores
 
