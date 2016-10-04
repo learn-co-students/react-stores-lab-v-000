@@ -36,6 +36,7 @@ class App extends React.Component {
             -
           </button>
           <button className='increment' onClick={this.handleIncrementClick}>
+
             +
           </button>
         </div>

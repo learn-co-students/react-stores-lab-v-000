@@ -23,6 +23,7 @@ class Store {
   getState () {
     return this.state;
   }
+
 }
 
 module.exports = Store;
