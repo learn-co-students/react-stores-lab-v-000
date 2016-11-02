@@ -8,7 +8,7 @@ Our counter has two buttons used for incrementing and decrementing a number.
  
 This is what it's going to look like:
 
-![Screenshot](assets/screenshot.png)
+![Screenshot](https://s3.amazonaws.com/learn-verified/react-stores-lab-screenshot.png)
 
 ## Directory Structure
 
