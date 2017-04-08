@@ -1,5 +1,5 @@
-const counterStore = require('../stores/counterStore');
-const Store = require('../stores/Store');
+import counterStore from '../stores/counterStore';
+import Store from '../stores/Store';
 
 describe('counterStore', function () {
   it('should be an object', function () {

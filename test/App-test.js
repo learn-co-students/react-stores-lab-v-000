@@ -1,9 +1,9 @@
-const { shallow, mount } = require('enzyme');
-const counterStore = require('../stores/counterStore');
-const sinon = require('sinon');
-const React = require('react');
-const App = require('../components/App');
-const actions = require('../actions');
+import { shallow, mount } from 'enzyme';
+import counterStore from '../stores/counterStore';
+import sinon from 'sinon';
+import React from 'react';
+import App from '../components/App';
+import actions from '../actions';
 
 describe('<App />', function () {
   const sandbox = sinon.sandbox.create();

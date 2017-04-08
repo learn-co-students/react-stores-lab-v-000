@@ -1,6 +1,6 @@
-const actions = require('../actions');
-const sinon = require('sinon');
-const counterStore = require('../stores/counterStore');
+import actions from '../actions';
+import sinon from 'sinon';
+import counterStore from '../stores/counterStore';
 
 describe('actions', function () {
   const sandbox = sinon.sandbox.create();
