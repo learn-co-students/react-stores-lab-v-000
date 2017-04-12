@@ -1,5 +1,5 @@
-const Store = require('../stores/Store');
-const sinon = require('sinon');
+import Store from '../stores/Store';
+import sinon from 'sinon';
 
 describe('Store', function () {
   it('should be a class', function () {

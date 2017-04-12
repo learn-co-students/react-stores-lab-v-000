@@ -1,4 +1,4 @@
-const Store = require('./Store');
+import Store from './Store';
 
 class CounterStore extends Store {
   constructor () {
@@ -16,4 +16,6 @@ class CounterStore extends Store {
   }
 }
 
-module.exports = new CounterStore();
+const counterStore = new CounterStore();
+
+export default counterStore;

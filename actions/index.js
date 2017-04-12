@@ -1,4 +1,4 @@
-const counterStore = require('../stores/counterStore');
+import counterStore from '../stores/counterStore';
 
 const increment = () => {
   counterStore.increment();
@@ -8,8 +8,7 @@ const decrement = () => {
   counterStore.decrement();
 };
 
-module.exports = {
+export default {
   increment,
   decrement
-
 };

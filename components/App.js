@@ -1,6 +1,6 @@
-const React = require('react');
-const actions = require('../actions');
-const counterStore = require('../stores/CounterStore')
+import React from 'react';
+import actions from '../actions';
+import counterStore from '../stores/counterStore';
 
 class App extends React.Component {
   constructor (props) {
@@ -45,4 +45,4 @@ class App extends React.Component {
   }
 }
 
-module.exports = App;
+export default App;
