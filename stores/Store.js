@@ -4,4 +4,4 @@ class Store {
   // CounterStore is going to inherit from it.
 }
 
-module.exports = Store;
+export default Store;

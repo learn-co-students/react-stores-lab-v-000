@@ -3,4 +3,6 @@ class CounterStore {
   // Hint: extend the Store class!
 }
 
-module.exports = new CounterStore();
+const counterStore = new CounterStore();
+
+export default counterStore;
